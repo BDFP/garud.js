@@ -16,14 +16,13 @@
 			activeSelector: '.contact-nav-link'
 		},
 		'/login': {
-			component: Login,
+			//component: Login,
 			templateUrl: '/templates/login.html',
 			activeSelector: '.login-nav-link'
 		}
 	}
 
 	var myApp = new Garud();
-	myApp.Routes = routes;
-	myApp.ParentNodeSelector = '#root';
+	var Router = new Garud.Router(routes, '#root', '/example');
 	myApp.Start();
 })();

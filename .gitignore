@@ -1,2 +1,6 @@
 example/bower_components
 example/dist
+bower_components/
+.idea
+garud.js
+node_modules/

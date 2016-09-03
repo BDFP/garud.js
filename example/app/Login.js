@@ -8,24 +8,24 @@
 	// route post location
 	// successCb
 	// errorCb
-	var doLogin = Garud.HTTP.Post(
-		['#email', '#password'], 
-		'/login', 
-		function (response) {
-			//key, value
-			Garud.Data.saveToMemory('loginData', response);
-
-			//targetLocation
-			Garud.transit('/home');
-		}, 
-		function (reason) {
-			//string reason
-			Garud.Util.ShowError(reason);
-		}
-	);
-
-	var Login = new GarudComponent();
-
-	//querySelector, validationObject, actionFunc
-	Login.onClick('#login-btn', loginValidations, doLogin)
+	// var doLogin = Garud.HTTP.Post(
+	// 	['#email', '#password'],
+	// 	'/login',
+	// 	function (response) {
+	// 		//key, value
+	// 		Garud.Data.saveToMemory('loginData', response);
+	//
+	// 		//targetLocation
+	// 		Garud.transit('/home');
+	// 	},
+	// 	function (reason) {
+	// 		//string reason
+	// 		Garud.Util.ShowError(reason);
+	// 	}
+	// );
+	//
+	// var Login = new GarudComponent();
+	//
+	// //querySelector, validationObject, actionFunc
+	// Login.onClick('#login-btn', loginValidations, doLogin)
 })();

@@ -12,7 +12,7 @@ gulp.task('build-js', function() {
     .pipe(sourcemaps.init())
       .pipe(concat('bundle.js'))
       //only uglify if gulp is ran with '--type production'
-      //.pipe(gutil.env.type === 'production' ? uglify() : gutil.noop()) 
+      //.pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'));
 });
