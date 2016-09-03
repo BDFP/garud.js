@@ -5,9 +5,9 @@ Garud.Data = function () {
 
 Garud.Data.prototype.saveToMemory = function (key, value) {
     memDB[key] = value;
-    for (var changeFunc of this.varObservable[key]) {
-        changeFunc(value);
-    }
+    // for (var changeFunc of this.varObservable[key]) {
+    //     changeFunc(value);
+    // }
 }
 
 Garud.Data.prototype.observe = function (key, onChangeCb) {

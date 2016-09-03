@@ -2,6 +2,7 @@ var gulp = require('gulp'),
 	gUtil = require('gulp-util'),
 	concat = require('gulp-concat'),
 	sourcemaps = require('gulp-sourcemaps'),
+	uglify = require('gulp-uglify'),
 	mainBowerFiles = require('main-bower-files'),
 	_ = require('lodash');
 
@@ -14,8 +15,7 @@ gulp.task('build-js', function() {
   	var garudFiles = gulp.src(_.flatten(['src/**/*.js', mainBowerFiles()]))
 	    .pipe(sourcemaps.init())
 	  	.pipe(concat('garud.js'))
-	    //only uglify if gulp is ran with '--type production'
-	    //.pipe(gutil.env.type === 'production' ? uglify() : gutil.noop())
+		//.pipe(uglify())
 	    .pipe(sourcemaps.write())
 	    .pipe(gulp.dest('.'));
 });
