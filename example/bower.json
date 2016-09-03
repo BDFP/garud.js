@@ -1,0 +1,24 @@
+{
+  "name": "frontjs",
+  "description": "Minimalistic front end tooling",
+  "main": "index.js",
+  "authors": [
+    "Akash Shakdwipeea <ashakdwipeea@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "spa"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "axios": "^0.14.0"
+  }
+}
