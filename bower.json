@@ -1,0 +1,17 @@
+{
+  "name": "garud",
+  "homepage": "https://github.com/BDFP/garudjs",
+  "authors": [
+    "Akash Shakdwipeea <ashakdwipeea@gmail.com>"
+  ],
+  "description": "Easy SPA",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
